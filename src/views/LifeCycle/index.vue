@@ -38,6 +38,8 @@ export default {
   display: flex;
 }
 .life-cycle {
+  margin: 0 auto;
+  width: 1140px;
   &-list {
     padding-left: 1em;
     list-style: disc;
