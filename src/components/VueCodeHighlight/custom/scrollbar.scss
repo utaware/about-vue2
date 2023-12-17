@@ -1,0 +1,17 @@
+$scrollbarWidth: 8px;
+$scrollbarColor: #FFF;
+
+.code-highlight {
+  & ::-webkit-scrollbar {
+    width: $scrollbarWidth;
+    height: $scrollbarWidth;
+  }
+  & ::-webkit-scrollbar-thumb {
+    border-radius: $scrollbarWidth / 2;
+    background: rgba($scrollbarColor, 0.2);
+  }
+  & ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: rgba($scrollbarColor, 0.1);
+  }
+}
