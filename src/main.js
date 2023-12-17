@@ -4,10 +4,11 @@ import App from './App.vue'
 import 'minireset.css'
 import 'normalize.css'
 
-import './styles/index.scss'
+import router from './router'
 
 Vue.config.productionTip = false
 
 new Vue({
+  router,
   render: (h) => h(App),
 }).$mount('#app')
