@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import 'element-ui/lib/theme-chalk/index.css'
+
 import routes from './routes'
 
 Vue.use(VueRouter)
