@@ -6,11 +6,11 @@
       </div>
       <el-tabs type="border-card">
         <el-tab-pane
-          v-for="{ name } in lifeCycleOptions"
+          v-for="{ name, component } in lifeCycleOptions"
           :key="name"
           :label="name"
         >
-          <beforeCreate></beforeCreate>
+          <components :is="component"></components>
         </el-tab-pane>
       </el-tabs>
     </el-card>
@@ -19,13 +19,10 @@
 
 <script>
 import lifeCycleOptions from './options/life'
-import beforeCreate from './components/BeforeCreate'
 
 export default {
   name: 'LifeCyclePage',
-  components: {
-    beforeCreate,
-  },
+  components: {},
   data() {
     return {
       lifeCycleOptions,
