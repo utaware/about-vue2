@@ -39,7 +39,7 @@ export default {
 }
 .life-cycle {
   margin: 0 auto;
-  width: 1140px;
+  width: 1280px;
   &-list {
     padding-left: 1em;
     list-style: disc;
