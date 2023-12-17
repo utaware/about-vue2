@@ -1,24 +1,37 @@
-# about-vue2
+# vue2
 
-## Project setup
-```
-npm install
-```
+## vue-cli
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[docs](https://cli.vuejs.org/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### command
 
-### Lints and fixes files
-```
-npm run lint
-```
+> [source-code](https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli/bin/vue.js)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- `create <app-name>`(项目创建)
+- `add <plugin> [pluginOptions]`(插件安装)
+- `invoke <plugin> [pluginOptions]`(跳过插件安装,执行插件 generator)
+- `inspect [paths...]`(检查项目配置)
+- `serve`
+- `build`
+- `ui`(使用 GUI 安装和管理插件)
+- `init <template> <app-name>`(初始化项目)
+- `config [value]`(检查并修改配置)
+- `outdated`(检查过时的 cli 服务/插件)
+- `upgrade [plugin-name]`(更新 cli)
+- `migrate [plugin-name]`(为已经安装的 cli 插件运行 migrator)
+- `info`(输出环境信息)
+
+### template
+
+> init template 模板选项
+
+- webpack
+- webpack-simple
+- browserify
+- browserify-simple
+- simple
+
+### config file
+
+> `vue.config.js`
