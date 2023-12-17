@@ -1,6 +1,6 @@
-import { Button, Collapse } from 'element-ui'
+import { Button, Card, Collapse, CollapseItem, Tabs, TabPane } from 'element-ui'
 
-const components = [Button, Collapse]
+const components = [Button, Card, Collapse, CollapseItem, Tabs, TabPane]
 
 export default {
   install(vue) {

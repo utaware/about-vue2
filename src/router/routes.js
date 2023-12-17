@@ -1,10 +1,16 @@
-import HomeView from '../views/HomeView.vue'
+import HomePage from '@/views/Home'
+import LifeCyclePage from '@/views/LifeCycle'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: HomePage,
+  },
+  {
+    path: '/life-cycle',
+    name: 'life-cycle',
+    component: LifeCyclePage,
   },
   {
     path: '/about',

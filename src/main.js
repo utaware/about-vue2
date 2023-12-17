@@ -4,6 +4,8 @@ import App from './App.vue'
 import 'minireset.css'
 import 'normalize.css'
 
+import '@/styles/index.scss'
+
 import router from '@/router'
 
 import ElementUI from '@/components/ElementUI'

@@ -1,0 +1,28 @@
+/* theme color */
+$--color-primary: #1890ff;
+$--color-success: #13ce66;
+$--color-warning: #ffba00;
+$--color-danger: #ff4949;
+$--color-info: #909399;
+
+$--color-theme-map: (
+  primary: $--color-primary,
+  success: $--color-success,
+  warning: $--color-warning,
+  danger: $--color-danger,
+  info: $--color-info,
+);
+
+@each $key, $value in $--color-theme-map {
+  .color-#{$key} {
+    color: $value;
+  }
+};
+
+:export {
+  primary: $--color-primary;
+  success: $--color-success;
+  warning: $--color-warning;
+  danger: $--color-danger;
+  info: $--color-info;
+}
