@@ -3,6 +3,7 @@ import createdHooks from '../components/Created'
 import beforeMountHooks from '../components/BeforeMount'
 import mountedHooks from '../components/Mounted'
 import beforeUpdateHooks from '../components/BeforeUpdate'
+import updatedHooks from '../components/Updated'
 
 export default [
   {
@@ -27,6 +28,7 @@ export default [
   },
   {
     name: 'updated',
+    component: updatedHooks,
   },
   {
     name: 'activated',
