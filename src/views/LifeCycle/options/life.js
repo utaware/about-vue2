@@ -5,6 +5,7 @@ import mountedHooks from '../components/Mounted'
 import beforeUpdateHooks from '../components/BeforeUpdate'
 import updatedHooks from '../components/Updated'
 import beforeDestroyHooks from '../components/BeforeDestroy'
+import destroyedHooks from '../components/Destroyed'
 
 export default [
   {
@@ -37,6 +38,7 @@ export default [
   },
   {
     name: 'destroyed',
+    component: destroyedHooks,
   },
   {
     name: 'activated',
