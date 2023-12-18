@@ -2,6 +2,7 @@ import beforeCreateHooks from '../components/BeforeCreate'
 import createdHooks from '../components/Created'
 import beforeMountHooks from '../components/BeforeMount'
 import mountedHooks from '../components/Mounted'
+import beforeUpdateHooks from '../components/BeforeUpdate'
 
 export default [
   {
@@ -22,6 +23,7 @@ export default [
   },
   {
     name: 'beforeUpdate',
+    component: beforeUpdateHooks,
   },
   {
     name: 'updated',
