@@ -1,4 +1,6 @@
 export default `
+  // src/core/instance/lifecycle.js
+  // 根实例 Vue.prototype.$mount -> mountComponent
   export function mountComponent (
     vm: Component,
     el: ?Element,
@@ -32,4 +34,5 @@ export default `
     }
     return vm
   }
+
 `
