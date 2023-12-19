@@ -6,6 +6,8 @@ import beforeUpdateHooks from '../components/BeforeUpdate'
 import updatedHooks from '../components/Updated'
 import beforeDestroyHooks from '../components/BeforeDestroy'
 import destroyedHooks from '../components/Destroyed'
+import activatedHooks from '../components/Activated'
+import deactivatedHooks from '../components/Deactivated'
 
 export default [
   {
@@ -42,9 +44,11 @@ export default [
   },
   {
     name: 'activated',
+    component: activatedHooks,
   },
   {
     name: 'deactivated',
+    component: deactivatedHooks,
   },
   {
     name: 'errorCaptured',

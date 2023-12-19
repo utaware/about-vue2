@@ -17,11 +17,10 @@
 // components
 import VueCodeHighlight from '@/components/VueCodeHighlight'
 // code
-// import callHookCode from './source/callHook'
-// import initInjectionsCode from './source/initInjections'
-// import initStateCode from './source/initState'
-// import initProvideCode from './source/initProvide'
-// import summaryCode from './source/summary'
+import callHookCode from './source/callHook'
+import componentCode from './source/component'
+import schedulerCode from './source/scheduler'
+import summaryCode from './source/summary'
 
 export default {
   name: 'ActivatedHooks',
@@ -34,11 +33,10 @@ export default {
       activeNames: [],
       // code
       sourceCodeList: [
-        // { title: 'callHook', content: callHookCode },
-        // { title: 'initInjections', content: initInjectionsCode },
-        // { title: 'initState', content: initStateCode },
-        // { title: 'initProvide', content: initProvideCode },
-        // { title: 'summary', content: summaryCode },
+        { title: 'callHook', content: callHookCode },
+        { title: 'component', content: componentCode },
+        { title: 'scheduler', content: schedulerCode },
+        { title: 'summary', content: summaryCode },
       ],
     }
   },
