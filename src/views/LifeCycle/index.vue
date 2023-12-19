@@ -6,11 +6,22 @@
       </div>
       <el-tabs type="border-card">
         <el-tab-pane
-          v-for="{ name, component } in lifeCycleOptions"
+          v-for="{ name, source } in lifeCycleOptions"
           :key="name"
           :label="name"
         >
-          <components :is="component"></components>
+          <el-collapse>
+            <el-collapse-item
+              v-for="{ title, content } in source"
+              :title="title"
+              :name="title"
+              :key="title"
+            >
+              <VueCodeHighlight>
+                {{ content }}
+              </VueCodeHighlight>
+            </el-collapse-item>
+          </el-collapse>
         </el-tab-pane>
       </el-tabs>
     </el-card>
@@ -18,11 +29,16 @@
 </template>
 
 <script>
+// components
+import VueCodeHighlight from '@/components/VueCodeHighlight'
+// js
 import lifeCycleOptions from './options/life'
 
 export default {
   name: 'LifeCyclePage',
-  components: {},
+  components: {
+    VueCodeHighlight,
+  },
   data() {
     return {
       lifeCycleOptions,

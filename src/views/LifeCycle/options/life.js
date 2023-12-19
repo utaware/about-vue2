@@ -9,48 +9,51 @@ import destroyedHooks from '../components/Destroyed'
 import activatedHooks from '../components/Activated'
 import deactivatedHooks from '../components/Deactivated'
 
-export default [
+const options = [
   {
     name: 'beforeCreate',
-    component: beforeCreateHooks,
+    source: beforeCreateHooks,
   },
   {
     name: 'created',
-    component: createdHooks,
+    source: createdHooks,
   },
   {
     name: 'beforeMount',
-    component: beforeMountHooks,
+    source: beforeMountHooks,
   },
   {
     name: 'mounted',
-    component: mountedHooks,
+    source: mountedHooks,
   },
   {
     name: 'beforeUpdate',
-    component: beforeUpdateHooks,
+    source: beforeUpdateHooks,
   },
   {
     name: 'updated',
-    component: updatedHooks,
+    source: updatedHooks,
   },
   {
     name: 'beforeDestroy',
-    component: beforeDestroyHooks,
+    source: beforeDestroyHooks,
   },
   {
     name: 'destroyed',
-    component: destroyedHooks,
+    source: destroyedHooks,
   },
   {
     name: 'activated',
-    component: activatedHooks,
+    source: activatedHooks,
   },
   {
     name: 'deactivated',
-    component: deactivatedHooks,
+    source: deactivatedHooks,
   },
   {
     name: 'errorCaptured',
+    source: [],
   },
 ]
+
+export default options
