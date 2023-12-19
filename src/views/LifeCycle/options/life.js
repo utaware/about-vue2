@@ -8,6 +8,7 @@ import beforeDestroyHooks from '../components/BeforeDestroy'
 import destroyedHooks from '../components/Destroyed'
 import activatedHooks from '../components/Activated'
 import deactivatedHooks from '../components/Deactivated'
+import errorCaptured from '../components/ErrorCaptured'
 
 const options = [
   {
@@ -52,7 +53,7 @@ const options = [
   },
   {
     name: 'errorCaptured',
-    source: [],
+    source: errorCaptured,
   },
 ]
 
