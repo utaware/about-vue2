@@ -1,59 +1,59 @@
-import beforeCreateHooks from '../components/BeforeCreate'
-import createdHooks from '../components/Created'
-import beforeMountHooks from '../components/BeforeMount'
-import mountedHooks from '../components/Mounted'
-import beforeUpdateHooks from '../components/BeforeUpdate'
-import updatedHooks from '../components/Updated'
-import beforeDestroyHooks from '../components/BeforeDestroy'
-import destroyedHooks from '../components/Destroyed'
-import activatedHooks from '../components/Activated'
-import deactivatedHooks from '../components/Deactivated'
-import errorCaptured from '../components/ErrorCaptured'
+import beforeCreateHookCode from '../code/BeforeCreate'
+import createdHookCode from '../code/Created'
+import beforeMountHookCode from '../code/BeforeMount'
+import mountedHookCode from '../code/Mounted'
+import beforeUpdateHookCode from '../code/BeforeUpdate'
+import updatedHookCode from '../code/Updated'
+import beforeDestroyHookCode from '../code/BeforeDestroy'
+import destroyedHookCode from '../code/Destroyed'
+import activatedHookCode from '../code/Activated'
+import deactivatedHookCode from '../code/Deactivated'
+import errorCapturedHookCode from '../code/ErrorCaptured'
 
 const options = [
   {
     name: 'beforeCreate',
-    source: beforeCreateHooks,
+    source: beforeCreateHookCode,
   },
   {
     name: 'created',
-    source: createdHooks,
+    source: createdHookCode,
   },
   {
     name: 'beforeMount',
-    source: beforeMountHooks,
+    source: beforeMountHookCode,
   },
   {
     name: 'mounted',
-    source: mountedHooks,
+    source: mountedHookCode,
   },
   {
     name: 'beforeUpdate',
-    source: beforeUpdateHooks,
+    source: beforeUpdateHookCode,
   },
   {
     name: 'updated',
-    source: updatedHooks,
+    source: updatedHookCode,
   },
   {
     name: 'beforeDestroy',
-    source: beforeDestroyHooks,
+    source: beforeDestroyHookCode,
   },
   {
     name: 'destroyed',
-    source: destroyedHooks,
+    source: destroyedHookCode,
   },
   {
     name: 'activated',
-    source: activatedHooks,
+    source: activatedHookCode,
   },
   {
     name: 'deactivated',
-    source: deactivatedHooks,
+    source: deactivatedHookCode,
   },
   {
     name: 'errorCaptured',
-    source: errorCaptured,
+    source: errorCapturedHookCode,
   },
 ]
 
